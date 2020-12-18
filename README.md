@@ -1,7 +1,7 @@
-#Extracting the required data from the chelatase_db database
+# Extracting the required data from the chelatase_db database
 ```bash
 
-#Extracting all signals
+# Extracting all signals
 mysql -u *user* -p*password* -e "select parent_id, data from fshifts_param;" chelatase_db > signals.txt
 
 #Extracting all id and genus information
@@ -13,12 +13,12 @@ mysql -u *user* -p*password* -e "select id, genus from orgs;" chelatase_db > org
 
 ```
 
-#Receiving sequences in fasta format for each genus
+# Receiving sequences in fasta format for each genus
 Use 'txt_to_fasta.ipynb' to convert the txt signal file to a fasta file.
 
 To get fasta files for each genus separately, use 'Find_Bacteria_signals.ipynb'.
 
-#Signal analysis
+# Signal analysis
 Alignment tool(mlocarna) - http://www.bioinf.uni-freiburg.de/Software/
 
 Secondary structure predictor tool(RNAalifold) - http://rna.tbi.univie.ac.at/
