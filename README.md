@@ -1,7 +1,7 @@
 # Extracting the required data from the chelatase_db database
 ```bash
 
-# Extracting all signals
+#Extracting all signals
 mysql -u *user* -p*password* -e "select parent_id, data from fshifts_param;" chelatase_db > signals.txt
 
 #Extracting all id and genus information
